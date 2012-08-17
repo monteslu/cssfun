@@ -1,0 +1,39 @@
+body{
+    animation:myfirst 3s;
+    -moz-animation:myfirst 3s; /* Firefox */
+    -webkit-animation:myfirst 3s; /* Safari and Chrome */
+    -o-animation:myfirst 3s; /* Opera */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: alternate;
+}
+
+@keyframes myfirst
+{
+from {color: blue; background:yellow; transform:rotate(10deg);}
+to {color: red; background:green; transform:rotate(-10deg);}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {color: blue; background:yellow; -moz-transform:rotate(10deg);}
+to {color: red; background:green;-moz-transform:rotate(-10deg);}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {color: blue; background:yellow; -webkit-transform:rotate(10deg);}
+to {color: red; background:green;-webkit-transform:rotate(-10deg);}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {color: blue; background:yellow; -o-transform:rotate(10deg);}
+to {color: red; background:green;-o-transform:rotate(-10deg);}
+}
+​
